@@ -5,20 +5,20 @@
 const portfolioData = {
     personal: {
         name: "Advi Rao Kulkarni",
-        shortName: "Advi Kulkarni", 
+        shortName: "Advi Rao Kulkarni", 
         title: "SAP Senior Consultant & Technical Architect",
         subtitle: "Data Analytics and Insights Specialist",
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
         email: "aadvirao@gmail.com",
         location: "Houston, TX",
-        linkedin: "https://linkedin.com/in/advi-kulkarni", // UPDATE THIS WITH YOUR ACTUAL LINKEDIN URL
-        github: "https://github.com/advi-kulkarni" // UPDATE THIS WITH YOUR ACTUAL GITHUB USERNAME
+        linkedin: "https://linkedin.com/in/advirao", // UPDATE THIS WITH YOUR ACTUAL LINKEDIN URL
+        github: "https://github.com/advirao" // UPDATE THIS WITH YOUR ACTUAL GITHUB USERNAME
     },
     
     about: {
         paragraphs: [
-            "I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.",
+            "I am a Senior Data & Analytics Consultant  & Technical Architect with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.",
             
             "I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).",
             
@@ -36,15 +36,15 @@ const portfolioData = {
         {
             title: "SAP Technologies",
             icon: "fas fa-database",
-            tags: [
-                "SAP S4/HANA", 
-                "BW4HANA", 
+            tags: [ 
+                "SAP BW4HANA", 
                 "SAP IBP", 
                 "SAP HANA", 
                 "SAP Datasphere", 
                 "SAP SAC", 
                 "SAP AFO", 
-                "SAP CPI"
+                "SAP CPI",
+                "SAP S4/HANA",
             ]
         },
         {
@@ -68,7 +68,9 @@ const portfolioData = {
                 "AWS", 
                 "Tableau", 
                 "Power BI", 
-                "Denodo Platform"
+                "Denodo Platform",
+                "Terraform",
+                "Azure-ADF",
             ]
         },
         {
@@ -86,6 +88,16 @@ const portfolioData = {
     ],
     
     experience: [
+        {
+            title: "Technical Lead/Architect – Trade,Risk & Compliance",
+            company: "Infosys | Houston, TX",
+            duration: "December 2024 - Till Date | Oil & Gas",
+            achievements: [
+               "Supporting Trading & Risk operations by delivering Position Matching, Valuation, VaR, Capital Charge, Commercial Margin, and Exposure reporting across SAP ECC, SAP HANA, SLT, Qlik, and Snowflake."
+               "Optimized complex analytical models by providing deep performance insights on latency, CPU, memory swap, connection and transaction handling, workload execution, data consistency & locks, and workload throttling."
+               "Partnered with senior traders to troubleshoot and resolve issues in exposure, position, valuation, and Mark-to-Market (MTM) reporting, enabling accurate risk visibility and faster decision-making."
+            ]
+        },
         {
             title: "Technical Lead/Architect – Data & Analytics",
             company: "Infosys | Houston, TX",
