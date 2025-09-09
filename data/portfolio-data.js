@@ -16,10 +16,7 @@ const portfolioData = {
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
         email: "advirao@gmail.com",
-        location: "Houston, TX",
-        // Add your LinkedIn, GitHub, etc.
-        linkedin: "www.linkedin.com/in/advirao", // Update with your LinkedIn
-        github: "https://github.com/advirao" // Update with your GitHub
+        location: "Houston, TX"
     },
     
     // ========================================== 
@@ -42,8 +39,6 @@ const portfolioData = {
         { number: "16+", label: "Years Experience" },
         { number: "$10M+", label: "Project Value Led" },
         { number: "15+", label: "Team Members Managed" }
-        // Add more stats as needed:
-        // { number: "50+", label: "Projects Completed" }
     ],
     
     // ========================================== 
@@ -100,12 +95,6 @@ const portfolioData = {
                 "ERD Modeling"
             ]
         }
-        // To add a new skill category:
-        // {
-        //     title: "New Category",
-        //     icon: "fas fa-icon-name",
-        //     tags: ["Skill 1", "Skill 2", "Skill 3"]
-        // }
     ],
     
     // ========================================== 
@@ -155,57 +144,12 @@ const portfolioData = {
                 "Demonstrated expertise in SAP ABAP, BW, and testing methodologies"
             ]
         }
-        
-        // To add a new job:
-        // {
-        //     title: "Your New Job Title",
-        //     company: "Company Name | Location",
-        //     duration: "Start Date - End Date | Industry",
-        //     achievements: [
-        //         "Achievement 1",
-        //         "Achievement 2",
-        //         "Achievement 3"
-        //     ]
-        // }
-    ],
-    
-    // ========================================== 
-    // CERTIFICATIONS (Optional)
-    // ==========================================
-    certifications: [
-        "Academy Accreditation – Databricks Lakehouse",
-        "Badges on Snowflake – Data Engineering",
-        "Badges on the Generative AI SAP",
-        "Snowflake – Snowpro Core Certified"
-        // Add new certifications here
-    ],
-    
-    // ========================================== 
-    // EDUCATION (Optional)
-    // ==========================================
-    education: [
-        {
-            degree: "Bachelor of Engineering in Electronics & Communication",
-            institution: "SIR MVIT College of Engineering",
-            location: "Bengaluru, India",
-            year: "2004 - 2008"
-        }
-        // Add more education if needed
     ],
     
     // ========================================== 
     // CONTACT INFORMATION
     // ==========================================
     contact: {
-        description: "Ready to discuss your next SAP Data Analytics project? Let's connect!",
-        cta: "Let's work together on your next project"
+        description: "Ready to discuss your next SAP Data Analytics project? Let's connect!"
     }
 };
-
-// ==========================================
-// DO NOT EDIT BELOW THIS LINE
-// ==========================================
-// This makes the data available to your website
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = portfolioData;
-}
