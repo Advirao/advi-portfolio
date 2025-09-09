@@ -11,7 +11,7 @@ const portfolioData = {
     personal: {
         name: "Advi Rao Kulkarni",
         shortName: "Advi Rao Kulkarni",
-        title: "SAP Senior Consultant & Technical Architect",
+        title: "Technical Architect",
         subtitle: "Data Analytics and Insights Specialist",
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
