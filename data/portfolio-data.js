@@ -20,7 +20,6 @@ const portfolioData = {
         linkedin: "https://linkedin.com/in/advirao",
         github: "https://github.com/advirao"
     },
-    },
     
     // ========================================== 
     // ABOUT SECTION
