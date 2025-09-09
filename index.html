@@ -13,7 +13,7 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segui UI', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -404,21 +404,6 @@
             font-size: 1.2rem;
         }
 
-        /* Update Notice */
-        .update-notice {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: #667eea;
-            color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            font-size: 0.9rem;
-            z-index: 1000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            max-width: 300px;
-        }
-
         /* Footer */
         footer {
             background: #333;
@@ -495,27 +480,14 @@
                 align-items: center;
                 gap: 1rem;
             }
-
-            .update-notice {
-                position: relative;
-                bottom: 0;
-                left: 0;
-                margin: 20px;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Update Notice -->
-    <div class="update-notice">
-        <strong>✏️ To Update:</strong><br>
-        Edit the portfolioData object in the JavaScript section of this HTML file!
-    </div>
-
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo" id="logo-name">Advi Rao Kulkarni</div>
+            <div class="logo">Advi Kulkarni</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -529,8 +501,8 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 id="hero-name">Advi Rao Kulkarni</h1>
-            <p id="hero-title">SAP Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist</p>
+            <h1>Advi Rao Kulkarni</h1>
+            <p>SAP Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist</p>
             <a href="#about" class="cta-button">Learn More About Me</a>
         </div>
     </section>
@@ -548,15 +520,26 @@
                         </div>
                     </div>
                     <div class="about-text">
-                        <h3 id="about-role">Senior Data & Analytics Consultant</h3>
-                        <div id="about-paragraphs">
-                            <!-- Content loaded by JavaScript -->
-                        </div>
+                        <h3>Senior Data & Analytics Consultant</h3>
+                        <p>I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.</p>
+                        <p>I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).</p>
+                        <p>With a strong mix of technical expertise and functional knowledge, I translate complex business requirements into actionable data analytics solutions. I have successfully generated business opportunities ranging from $500K to $10M and led teams in onsite-offshore models.</p>
                     </div>
                 </div>
                 
-                <div class="stats" id="stats-container">
-                    <!-- Content loaded by JavaScript -->
+                <div class="stats">
+                    <div class="stat">
+                        <h4>16+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h4>$10M+</h4>
+                        <p>Project Value Led</p>
+                    </div>
+                    <div class="stat">
+                        <h4>15+</h4>
+                        <p>Team Members Managed</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -565,8 +548,56 @@
         <section id="skills" class="section skills">
             <div class="container">
                 <h2>Skills & Technologies</h2>
-                <div class="skills-grid" id="skills-container">
-                    <!-- Content loaded by JavaScript -->
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> SAP Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SAP S4/HANA</span>
+                            <span class="skill-tag">BW4HANA</span>
+                            <span class="skill-tag">SAP IBP</span>
+                            <span class="skill-tag">SAP HANA</span>
+                            <span class="skill-tag">SAP Datasphere</span>
+                            <span class="skill-tag">SAP SAC</span>
+                            <span class="skill-tag">SAP AFO</span>
+                            <span class="skill-tag">SAP CPI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming & Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">ABAP</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">CDS</span>
+                            <span class="skill-tag">AMDP</span>
+                            <span class="skill-tag">Shell Bash Script</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & Analytics</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">Databricks</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Denodo Platform</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cogs"></i> Business & Project Management</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RFP Management</span>
+                            <span class="skill-tag">Digital Transformation</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Resource Management</span>
+                            <span class="skill-tag">Technical Training</span>
+                            <span class="skill-tag">ERD Modeling</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -575,8 +606,65 @@
         <section id="experience" class="section">
             <div class="container">
                 <h2>Professional Experience</h2>
-                <div class="experience-timeline" id="experience-container">
-                    <!-- Content loaded by JavaScript -->
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="job-title">Technical Lead/Architect – Data & Analytics</div>
+                            <div class="company">Infosys | Houston, TX</div>
+                            <div class="duration">May 2023 - November 2024 | Automotive Industry</div>
+                            <ul class="achievements">
+                                <li>Spearheaded a $5 million digital transformation initiative modernizing analytical capabilities</li>
+                                <li>Designed comprehensive SAP VMS Analytics and Order to Cash solutions with 90+ KPIs</li>
+                                <li>Led cross-functional team of 7 resources for successful solution deployment</li>
+                                <li>Performed POC on SAP Datasphere, replicating SAP ME and BW4HANA systems</li>
+                                <li>Enabled significant cost savings through enhanced data-driven decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="job-title">Technical Lead/Senior Consultant – Data & Analytics</div>
+                            <div class="company">Infosys | Bengaluru, India</div>
+                            <div class="duration">May 2018 - Mar 2023 | Manufacturing Industry</div>
+                            <ul class="achievements">
+                                <li>Conceived and executed $450k RFP digital transformation project for SAP IBP</li>
+                                <li>Architected analytical solution improving manufacturing efficiency by 80%</li>
+                                <li>Created Python and Bash script applications for data validation automation</li>
+                                <li>Led team of 3 developers ensuring timely project delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="job-title">Team Lead – SAP BW Support</div>
+                            <div class="company">Cognizant | Bengaluru, India</div>
+                            <div class="duration">May 2014 - May 2018 | Semiconductor Industry</div>
+                            <ul class="achievements">
+                                <li>Led 12-member team providing 24/7 application maintenance and support</li>
+                                <li>Proactively minimized incident counts ensuring uninterrupted business processes</li>
+                                <li>Optimized system performance for critical semiconductor operations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="job-title">SAP BW/ABAP Developer</div>
+                            <div class="company">IBM | Bengaluru, India</div>
+                            <div class="duration">April 2011 - July 2014 | Consulting & Audit</div>
+                            <ul class="achievements">
+                                <li>Contributed to SAP BW development projects in COE team</li>
+                                <li>Designed and developed Finance Reports</li>
+                                <li>Demonstrated expertise in SAP ABAP, BW, and testing methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -586,14 +674,32 @@
             <div class="container">
                 <div class="contact-content">
                     <h2>Get In Touch</h2>
-                    <p id="contact-description">Ready to discuss your next SAP Data Analytics project? Let's connect!</p>
+                    <p>Ready to discuss your next SAP Data Analytics project? Let's connect!</p>
                     
-                    <div class="contact-info" id="contact-container">
-                        <!-- Content loaded by JavaScript -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(346) 395-8885</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>aadvirao@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Houston, TX</span>
+                        </div>
                     </div>
                     
-                    <div class="social-links" id="social-links">
-                        <!-- Content loaded by JavaScript -->
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/advi-kulkarni" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/advi-kulkarni" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -603,269 +709,56 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p id="footer-text">&copy; 2024 Advi Rao Kulkarni. All rights reserved.</p>
+            <p>&copy; 2024 Advi Rao Kulkarni. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // ==========================================
-        // PORTFOLIO DATA - EDIT THIS SECTION TO UPDATE YOUR WEBSITE
-        // ==========================================
-        const portfolioData = {
-            personal: {
-                name: "Advi Rao Kulkarni",
-                shortName: "Advi Rao Kulkarni",
-                title: "SAP Senior Consultant & Technical Architect",
-                subtitle: "Data Analytics and Insights Specialist", 
-                role: "Senior Data & Analytics Consultant & Technical Architect",
-                phone: "(346) 395-8885",
-                email: "advirao@gmail.com",
-                location: "Houston, TX",
-                linkedin: "https://linkedin.com/in/advirao", // UPDATE WITH YOUR ACTUAL LINKEDIN
-                github: "https://github.com/advirao" // UPDATE WITH YOUR ACTUAL GITHUB
-            },
-            
-            about: {
-                paragraphs: [
-                    "I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.",
-                    
-                    "I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).",
-                    
-                    "With a strong mix of technical expertise and functional knowledge, I translate complex business requirements into actionable data analytics solutions. I have successfully generated business opportunities ranging from $500K to $10M and led teams in onsite-offshore models."
-                ]
-            },
-            
-            stats: [
-                { number: "16+", label: "Years Experience" },
-                { number: "$10M+", label: "Project Value Led" },
-                { number: "15+", label: "Team Members Managed" }
-            ],
-            
-            skills: [
-                {
-                    title: "SAP Technologies",
-                    icon: "fas fa-database",
-                    tags: ["SAP S4/HANA", "BW4HANA", "SAP IBP", "SAP HANA", "SAP Datasphere", "SAP SAC", "SAP AFO", "SAP CPI"]
-                },
-                {
-                    title: "Programming & Development",
-                    icon: "fas fa-code",
-                    tags: ["ABAP", "SQL", "Python", "CDS", "AMDP", "Shell Bash Script"]
-                },
-                {
-                    title: "Cloud & Analytics",
-                    icon: "fas fa-cloud",
-                    tags: ["Snowflake", "Databricks", "AWS", "Tableau", "Power BI", "Denodo Platform"]
-                },
-                {
-                    title: "Business & Project Management",
-                    icon: "fas fa-cogs",
-                    tags: ["RFP Management", "Digital Transformation", "Team Leadership", "Resource Management", "Technical Training", "ERD Modeling"]
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
-            ],
-            
-            experience: [
-                       {
-                    title: "Technical Lead/Architect – Trade,Risk & Compliance",
-                    company: "Infosys | Houston, TX",
-                    duration: "December 2024 - Till Date | Oil & Gas",
-                    achievements: [
-                       "Supporting Trading & Risk operations by delivering Position Matching, Valuation, VaR, Capital Charge, Commercial Margin, and Exposure reporting across SAP ECC, SAP HANA, SLT, Qlik, and Snowflake."
-                       "Optimized complex analytical models by providing deep performance insights on latency, CPU, memory swap, connection and transaction handling, workload execution, data consistency & locks, and workload throttling."
-                       "Partnered with senior traders to troubleshoot and resolve issues in exposure, position, valuation, and Mark-to-Market (MTM) reporting, enabling accurate risk visibility and faster decision-making."
-            ]
-        },
-                {
-                    title: "Technical Lead/Architect – Data & Analytics",
-                    company: "Infosys | Houston, TX",
-                    duration: "May 2023 - November 2024 | Automotive Industry",
-                    achievements: [
-                        "Spearheaded a $5 million digital transformation initiative modernizing analytical capabilities",
-                        "Designed comprehensive SAP VMS Analytics and Order to Cash solutions with 90+ KPIs",
-                        "Led cross-functional team of 7 resources for successful solution deployment",
-                        "Performed POC on SAP Datasphere, replicating SAP ME and BW4HANA systems",
-                        "Enabled significant cost savings through enhanced data-driven decision-making"
-                    ]
-                },
-                {
-                    title: "Technical Lead/Senior Consultant – Data & Analytics",
-                    company: "Infosys | Bengaluru, India",
-                    duration: "May 2018 - Mar 2023 | Manufacturing Industry",
-                    achievements: [
-                        "Conceived and executed $450k RFP digital transformation project for SAP IBP",
-                        "Architected analytical solution improving manufacturing efficiency by 80%",
-                        "Created Python and Bash script applications for data validation automation",
-                        "Led team of 3 developers ensuring timely project delivery"
-                    ]
-                },
-                {
-                    title: "Team Lead – SAP BW Support",
-                    company: "Cognizant | Bengaluru, India",
-                    duration: "May 2014 - May 2018 | Semiconductor Industry",
-                    achievements: [
-                        "Led 12-member team providing 24/7 application maintenance and support",
-                        "Proactively minimized incident counts ensuring uninterrupted business processes",
-                        "Optimized system performance for critical semiconductor operations"
-                    ]
-                },
-                {
-                    title: "SAP BW/ABAP Developer",
-                    company: "IBM | Bengaluru, India",
-                    duration: "April 2011 - July 2014 | Consulting & Audit",
-                    achievements: [
-                        "Contributed to SAP BW development projects in COE team",
-                        "Designed and developed Finance Reports",
-                        "Demonstrated expertise in SAP ABAP, BW, and testing methodologies"
-                    ]
-                }
-            ],
-            
-            contact: {
-                description: "Ready to discuss your next SAP Data Analytics project? Let's connect!"
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
-        
-        // ==========================================
-        // WEBSITE FUNCTIONALITY - DO NOT EDIT BELOW THIS LINE
-        // ==========================================
-        
-        function populateWebsite() {
-            // Update basic info
-            document.getElementById('page-title').textContent = `${portfolioData.personal.name} - ${portfolioData.personal.title}`;
-            document.getElementById('logo-name').textContent = portfolioData.personal.shortName;
-            document.getElementById('hero-name').textContent = portfolioData.personal.name;
-            document.getElementById('hero-title').innerHTML = `${portfolioData.personal.title}<br>${portfolioData.personal.subtitle}`;
-            document.getElementById('about-role').textContent = portfolioData.personal.role;
-            
-            // Populate about
-            document.getElementById('about-paragraphs').innerHTML = portfolioData.about.paragraphs
-                .map(p => `<p>${p}</p>`).join('');
-            
-            // Populate stats
-            document.getElementById('stats-container').innerHTML = portfolioData.stats
-                .map(stat => `
-                    <div class="stat">
-                        <h4>${stat.number}</h4>
-                        <p>${stat.label}</p>
-                    </div>
-                `).join('');
-            
-            // Populate skills
-            document.getElementById('skills-container').innerHTML = portfolioData.skills
-                .map(skill => `
-                    <div class="skill-category">
-                        <h3><i class="${skill.icon}"></i> ${skill.title}</h3>
-                        <div class="skill-tags">
-                            ${skill.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
-                        </div>
-                    </div>
-                `).join('');
-            
-            // Populate experience
-            document.getElementById('experience-container').innerHTML = portfolioData.experience
-                .map(exp => `
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="job-title">${exp.title}</div>
-                            <div class="company">${exp.company}</div>
-                            <div class="duration">${exp.duration}</div>
-                            <ul class="achievements">
-                                ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                `).join('');
-            
-            // Populate contact
-            document.getElementById('contact-description').textContent = portfolioData.contact.description;
-            document.getElementById('contact-container').innerHTML = `
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>${portfolioData.personal.phone}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>${portfolioData.personal.email}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>${portfolioData.personal.location}</span>
-                </div>
-            `;
-            
-            // Populate social links
-            let socialLinksHTML = '';
-            if (portfolioData.personal.linkedin) {
-                socialLinksHTML += `
-                    <a href="${portfolioData.personal.linkedin}" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                `;
-            }
-            if (portfolioData.personal.github) {
-                socialLinksHTML += `
-                    <a href="${portfolioData.personal.github}" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub Profile</span>
-                    </a>
-                `;
-            }
-            document.getElementById('social-links').innerHTML = socialLinksHTML;
-            
-            // Update footer
-            document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${portfolioData.personal.name}. All rights reserved.`;
-        }
 
-        // Initialize website
-        document.addEventListener('DOMContentLoaded', function() {
-            populateWebsite();
-            
-            // Hide update notice after 10 seconds
-            setTimeout(() => {
-                const notice = document.querySelector('.update-notice');
-                if (notice) notice.style.display = 'none';
-            }, 10000);
-            
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-
-            // Header scroll effect
-            window.addEventListener('scroll', function() {
-                const header = document.querySelector('header');
-                if (window.scrollY > 100) {
-                    header.style.background = 'rgba(255, 255, 255, 0.98)';
-                } else {
-                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
+        }, observerOptions);
 
-            // Animations
-            const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('.section').forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(section);
-            });
+        // Observe all sections for animation
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
         });
     </script>
 </body>
