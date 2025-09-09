@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing my expertise as a SAP Senior Consultant & Technical Architect specializing in Data Analytics and Insights.
 
 ## 🌟 Live Website
-**Visit:** [https://advirao.github.io/advi-protfolio/](https://advirao.github.io/advi-protfolio/)
+**Visit:** [https://advirao.github.io/advi-protfolio/](https://advirao.github.io/advi-portfolio/)
 
 ## 🎯 About This Portfolio
 This portfolio highlights my 16+ years of experience in SAP and Cloud technologies, showcasing projects ranging from $500K to $10M in digital transformation initiatives.
