@@ -10,16 +10,16 @@ const portfolioData = {
     // ==========================================
     personal: {
         name: "Advi Rao Kulkarni",
-        shortName: "Advi Kulkarni",
+        shortName: "Advi Rao Kulkarni",
         title: "SAP Senior Consultant & Technical Architect",
         subtitle: "Data Analytics and Insights Specialist",
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
-        email: "aadvirao@gmail.com",
+        email: "advirao@gmail.com",
         location: "Houston, TX",
         // Add your LinkedIn, GitHub, etc.
-        linkedin: "https://linkedin.com/in/your-profile", // Update with your LinkedIn
-        github: "https://github.com/your-username" // Update with your GitHub
+        linkedin: "www.linkedin.com/in/advirao", // Update with your LinkedIn
+        github: "https://github.com/advirao" // Update with your GitHub
     },
     
     // ========================================== 
