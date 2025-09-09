@@ -436,14 +436,6 @@
             }
         }
 
-        /* Loading indicator */
-        .loading {
-            display: inline-block;
-            padding: 1rem;
-            color: #667eea;
-            font-style: italic;
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-content h1 {
@@ -511,7 +503,7 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo" id="logo-name">Advi Rao Kulkarni</div>
+            <div class="logo" id="logo-name">Advi Kulkarni</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -526,7 +518,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 id="hero-name">Advi Rao Kulkarni</h1>
-            <p id="hero-title">Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist</p>
+            <p id="hero-title">SAP Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist</p>
             <a href="#about" class="cta-button">Learn More About Me</a>
         </div>
     </section>
@@ -544,9 +536,9 @@
                         </div>
                     </div>
                     <div class="about-text">
-                        <h3 id="about-role">Senior Data & Analytics Consultant & Technical Architect</h3>
+                        <h3 id="about-role">Senior Data & Analytics Consultant</h3>
                         <div id="about-paragraphs">
-                            <p>I am a Senior Data & Analytics Consultant & Technical Architect with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.</p>
+                            <p>I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.</p>
                             <p>I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).</p>
                             <p>With a strong mix of technical expertise and functional knowledge, I translate complex business requirements into actionable data analytics solutions. I have successfully generated business opportunities ranging from $500K to $10M and led teams in onsite-offshore models.</p>
                         </div>
@@ -575,7 +567,7 @@
             <div class="container">
                 <h2>Skills & Technologies</h2>
                 <div class="skills-grid" id="skills-container">
-                    <div class="loading">Loading skills...</div>
+                    <!-- Skills will be populated by JavaScript -->
                 </div>
             </div>
         </section>
@@ -585,7 +577,7 @@
             <div class="container">
                 <h2>Professional Experience</h2>
                 <div class="experience-timeline" id="experience-container">
-                    <div class="loading">Loading experience...</div>
+                    <!-- Experience will be populated by JavaScript -->
                 </div>
             </div>
         </section>
@@ -604,7 +596,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>advirao@gmail.com</span>
+                            <span>aadvirao@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -614,11 +606,11 @@
                     
                     <!-- Social Links Section -->
                     <div class="social-links" id="social-links">
-                        <a href="https://linkedin.com/in/advirao" target="_blank" class="social-link" id="linkedin-link">
+                        <a href="https://linkedin.com/in/advi-kulkarni" target="_blank" class="social-link" id="linkedin-link">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn Profile</span>
                         </a>
-                        <a href="https://github.com/advirao" target="_blank" class="social-link" id="github-link">
+                        <a href="https://github.com/advi-kulkarni" target="_blank" class="social-link" id="github-link">
                             <i class="fab fa-github"></i>
                             <span>GitHub Profile</span>
                         </a>
@@ -636,19 +628,19 @@
     </footer>
 
     <script>
-        // Portfolio Data - Embedded directly in the HTML
-        const portfolioData = {
+        // Portfolio Data (fallback if external file doesn't load)
+        const fallbackData = {
             personal: {
                 name: "Advi Rao Kulkarni",
-                shortName: "Advi Rao Kulkarni",
+                shortName: "Advi Kulkarni",
                 title: "SAP Senior Consultant & Technical Architect",
                 subtitle: "Data Analytics and Insights Specialist",
                 role: "Senior Data & Analytics Consultant",
                 phone: "(346) 395-8885",
-                email: "advirao@gmail.com",
+                email: "aadvirao@gmail.com",
                 location: "Houston, TX",
-                linkedin: "https://linkedin.com/in/advirao",
-                github: "https://github.com/advirao"
+                linkedin: "https://linkedin.com/in/advi-kulkarni",
+                github: "https://github.com/advi-kulkarni"
             },
             about: {
                 paragraphs: [
@@ -666,66 +658,25 @@
                 {
                     title: "SAP Technologies",
                     icon: "fas fa-database",
-                    tags: [
-                        "SAP HANA",, 
-                        "SAP BW4HANA", 
-                        "SAP IBP",    
-                        "SAP Datasphere", 
-                        "SAP SAC", 
-                        "SAP AFO", 
-                        "SAP CPI",
-                        "SAP S4/HANA"
-                    ]
+                    tags: ["SAP S4/HANA", "BW4HANA", "SAP IBP", "SAP HANA", "SAP Datasphere", "SAP SAC", "SAP AFO", "SAP CPI"]
                 },
                 {
-                    title: "Programming & Development",
+                    title: "Programming & Development", 
                     icon: "fas fa-code",
-                    tags: [
-                        "ABAP", 
-                        "SQL", 
-                        "Python", 
-                        "CDS", 
-                        "AMDP",                    
-                    ]
+                    tags: ["ABAP", "SQL", "Python", "CDS", "AMDP", "Shell Bash Script"]
                 },
                 {
                     title: "Cloud & Analytics",
-                    icon: "fas fa-cloud",
-                    tags: [
-                        "Snowflake", 
-                        "Databricks", 
-                        "AWS", 
-                        "Tableau", 
-                        "Power BI", 
-                        "Denodo Platform",
-                        "Terraform",
-                        "Azure - ADF"
-                    ]
+                    icon: "fas fa-cloud", 
+                    tags: ["Snowflake", "Databricks", "AWS", "Tableau", "Power BI", "Denodo Platform"]
                 },
                 {
                     title: "Business & Project Management",
                     icon: "fas fa-cogs",
-                    tags: [
-                        "RFP Management", 
-                        "Digital Transformation", 
-                        "Team Leadership", 
-                        "Resource Management", 
-                        "Technical Training", 
-                        "ERD Modeling"
-                    ]
+                    tags: ["RFP Management", "Digital Transformation", "Team Leadership", "Resource Management", "Technical Training", "ERD Modeling"]
                 }
             ],
             experience: [
-                {
-                    title: "Technical Lead/Architect – Trading Risk & Compliance",
-                    company: "Infosys | Houston, TX",
-                    duration: "December 2024 - Till Date | Oil & Gas",
-                    achievements: [
-                       "Supported Trading & Risk operations by delivering Position Matching, Valuation, VaR, Capital Charge, Commercial Margin, and Exposure reporting across SAP ECC, SAP HANA, SLT, Qlik, and Snowflake."
-                       "Optimized complex analytical models by providing deep performance insights on latency, CPU, memory swap, connection and transaction handling, workload execution, data consistency & locks, and workload throttling."
-                       "Partnered with senior traders to troubleshoot and resolve issues in exposure, position, valuation, and Mark-to-Market (MTM) reporting, enabling accurate risk visibility and faster decision-making."
-                    ]
-                },
                 {
                     title: "Technical Lead/Architect – Data & Analytics",
                     company: "Infosys | Houston, TX",
@@ -740,7 +691,7 @@
                 },
                 {
                     title: "Technical Lead/Senior Consultant – Data & Analytics",
-                    company: "Infosys | Bengaluru, India",
+                    company: "Infosys | Bengaluru, India", 
                     duration: "May 2018 - Mar 2023 | Manufacturing Industry",
                     achievements: [
                         "Conceived and executed $450k RFP digital transformation project for SAP IBP",
@@ -765,7 +716,7 @@
                     duration: "April 2011 - July 2014 | Consulting & Audit",
                     achievements: [
                         "Contributed to SAP BW development projects in COE team",
-                        "Designed and developed Finance Reports",
+                        "Designed and developed Finance Reports", 
                         "Demonstrated expertise in SAP ABAP, BW, and testing methodologies"
                     ]
                 }
@@ -777,8 +728,6 @@
 
         // Function to populate website with data
         function populateWebsite(data) {
-            console.log('Populating website with data:', data);
-            
             // Update page elements
             if (data.personal) {
                 document.getElementById('page-title').textContent = `${data.personal.name} - ${data.personal.title}`;
@@ -833,9 +782,6 @@
                             </div>
                         </div>
                     `).join('');
-                console.log('Skills populated successfully');
-            } else {
-                console.error('No skills data found');
             }
 
             // Populate experience
@@ -855,9 +801,6 @@
                             </div>
                         </div>
                     `).join('');
-                console.log('Experience populated successfully');
-            } else {
-                console.error('No experience data found');
             }
 
             // Update contact description
@@ -871,59 +814,29 @@
             }
         }
 
-        // Alternative method to load external data with better error handling
-        function loadExternalData() {
-            // Try to load from multiple possible locations
-            const possiblePaths = [
-                './portfolio-data.js',
-                './data/portfolio-data.js',
-                'portfolio-data.js',
-                'data/portfolio-data.js'
-            ];
-
-            let loadedExternal = false;
-
-            function tryLoadPath(index) {
-                if (index >= possiblePaths.length) {
-                    console.log('All external paths failed, using embedded data');
+        // Load external data file
+        function loadPortfolioData() {
+            const script = document.createElement('script');
+            script.src = 'data/portfolio-data.js';
+            script.onload = function() {
+                console.log('External data loaded successfully');
+                if (typeof portfolioData !== 'undefined') {
                     populateWebsite(portfolioData);
-                    return;
+                } else {
+                    console.warn('portfolioData not found, using fallback');
+                    populateWebsite(fallbackData);
                 }
-
-                const script = document.createElement('script');
-                script.src = possiblePaths[index];
-                script.onload = function() {
-                    console.log(`External data loaded from: ${possiblePaths[index]}`);
-                    if (typeof portfolioData !== 'undefined' && !loadedExternal) {
-                        loadedExternal = true;
-                        populateWebsite(portfolioData);
-                    }
-                };
-                script.onerror = function() {
-                    console.warn(`Failed to load from: ${possiblePaths[index]}`);
-                    tryLoadPath(index + 1);
-                };
-                document.head.appendChild(script);
-            }
-
-            // Start trying to load external data
-            tryLoadPath(0);
-
-            // Fallback after 2 seconds
-            setTimeout(() => {
-                if (!loadedExternal) {
-                    console.log('External data load timeout, using embedded data');
-                    populateWebsite(portfolioData);
-                }
-            }, 2000);
+            };
+            script.onerror = function() {
+                console.warn('External data file failed to load, using fallback');
+                populateWebsite(fallbackData);
+            };
+            document.head.appendChild(script);
         }
 
         // Initialize website
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, initializing website');
-            
-            // Load data (try external first, fallback to embedded)
-            loadExternalData();
+            loadPortfolioData();
 
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -964,12 +877,12 @@
                 });
             }, observerOptions);
 
-            // Observe elements for animation
-            document.querySelectorAll('.skill-category, .timeline-item, .stat').forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
+            // Observe all sections for animation
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
             });
         });
     </script>
