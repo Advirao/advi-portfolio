@@ -1,29 +1,21 @@
 // ==========================================
 // PORTFOLIO DATA - UPDATE THIS FILE WHEN YOUR RESUME CHANGES
 // ==========================================
-// This file contains all your personal information, experience, and skills
-// Simply edit the text below and your website will automatically update
 
 const portfolioData = {
-    // ========================================== 
-    // PERSONAL INFORMATION
-    // ==========================================
     personal: {
         name: "Advi Rao Kulkarni",
-        shortName: "Advi Rao Kulkarni",
-        title: "Technical Architect",
+        shortName: "Advi Kulkarni", 
+        title: "SAP Senior Consultant & Technical Architect",
         subtitle: "Data Analytics and Insights Specialist",
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
-        email: "advirao@gmail.com",
+        email: "aadvirao@gmail.com",
         location: "Houston, TX",
-        linkedin: "https://linkedin.com/in/advirao",
-        github: "https://github.com/advirao"
+        linkedin: "https://linkedin.com/in/advi-kulkarni", // UPDATE THIS WITH YOUR ACTUAL LINKEDIN URL
+        github: "https://github.com/advi-kulkarni" // UPDATE THIS WITH YOUR ACTUAL GITHUB USERNAME
     },
     
-    // ========================================== 
-    // ABOUT SECTION
-    // ==========================================
     about: {
         paragraphs: [
             "I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.",
@@ -34,18 +26,12 @@ const portfolioData = {
         ]
     },
     
-    // ========================================== 
-    // STATISTICS/ACHIEVEMENTS
-    // ==========================================
     stats: [
         { number: "16+", label: "Years Experience" },
         { number: "$10M+", label: "Project Value Led" },
         { number: "15+", label: "Team Members Managed" }
     ],
     
-    // ========================================== 
-    // SKILLS & TECHNOLOGIES
-    // ==========================================
     skills: [
         {
             title: "SAP Technologies",
@@ -99,9 +85,6 @@ const portfolioData = {
         }
     ],
     
-    // ========================================== 
-    // PROFESSIONAL EXPERIENCE
-    // ==========================================
     experience: [
         {
             title: "Technical Lead/Architect – Data & Analytics",
@@ -148,9 +131,6 @@ const portfolioData = {
         }
     ],
     
-    // ========================================== 
-    // CONTACT INFORMATION
-    // ==========================================
     contact: {
         description: "Ready to discuss your next SAP Data Analytics project? Let's connect!"
     }
