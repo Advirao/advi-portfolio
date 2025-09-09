@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Loading...</title>
+    <title id="page-title">Advi Rao Kulkarni - SAP Data Analytics Architect</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -356,7 +356,8 @@
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 4rem;
+            flex-wrap: wrap;
+            gap: 3rem;
             margin-top: 3rem;
         }
 
@@ -365,21 +366,54 @@
             align-items: center;
             gap: 1rem;
             font-size: 1.2rem;
+            min-width: 200px;
         }
 
         .contact-item i {
             font-size: 1.5rem;
+            min-width: 24px;
         }
 
         .contact-item a {
             color: white;
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .contact-item a:hover {
             opacity: 0.8;
             text-decoration: underline;
+        }
+
+        /* Social Links Specific Styling */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .social-link i {
+            font-size: 1.2rem;
         }
 
         /* Footer */
@@ -388,11 +422,6 @@
             color: white;
             text-align: center;
             padding: 2rem 0;
-        }
-
-        /* Loading state */
-        .loading {
-            opacity: 0.5;
         }
 
         /* Animations */
@@ -452,6 +481,21 @@
                 flex-direction: column;
                 gap: 2rem;
             }
+
+            .contact-item {
+                justify-content: center;
+                min-width: auto;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: fit-content;
+            }
         }
     </style>
 </head>
@@ -459,7 +503,7 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo" id="logo-name">Loading...</div>
+            <div class="logo" id="logo-name">Advi Kulkarni</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -473,8 +517,8 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 id="hero-name">Loading...</h1>
-            <p id="hero-title">Loading...</p>
+            <h1 id="hero-name">Advi Rao Kulkarni</h1>
+            <p id="hero-title">SAP Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist</p>
             <a href="#about" class="cta-button">Learn More About Me</a>
         </div>
     </section>
@@ -492,13 +536,28 @@
                         </div>
                     </div>
                     <div class="about-text">
-                        <h3 id="about-role">Loading...</h3>
-                        <div id="about-paragraphs">Loading...</div>
+                        <h3 id="about-role">Senior Data & Analytics Consultant</h3>
+                        <div id="about-paragraphs">
+                            <p>I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.</p>
+                            <p>I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).</p>
+                            <p>With a strong mix of technical expertise and functional knowledge, I translate complex business requirements into actionable data analytics solutions. I have successfully generated business opportunities ranging from $500K to $10M and led teams in onsite-offshore models.</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="stats" id="stats-container">
-                    <!-- Stats will be populated by JavaScript -->
+                    <div class="stat">
+                        <h4>16+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h4>$10M+</h4>
+                        <p>Project Value Led</p>
+                    </div>
+                    <div class="stat">
+                        <h4>15+</h4>
+                        <p>Team Members Managed</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -528,10 +587,33 @@
             <div class="container">
                 <div class="contact-content">
                     <h2>Get In Touch</h2>
-                    <p id="contact-description">Loading...</p>
+                    <p id="contact-description">Ready to discuss your next SAP Data Analytics project? Let's connect!</p>
                     
                     <div class="contact-info" id="contact-container">
-                        <!-- Contact info will be populated by JavaScript -->
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(346) 395-8885</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>aadvirao@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Houston, TX</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links Section -->
+                    <div class="social-links" id="social-links">
+                        <a href="https://linkedin.com/in/advi-kulkarni" target="_blank" class="social-link" id="linkedin-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/advi-kulkarni" target="_blank" class="social-link" id="github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -541,104 +623,221 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p id="footer-text">Loading...</p>
+            <p id="footer-text">&copy; 2024 Advi Rao Kulkarni. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Load the external data file -->
-    <script src="data/portfolio-data.js"></script>
-    
     <script>
-        // Function to populate the website with data from external file
-        function populateWebsite() {
-            // Check if portfolioData is loaded
-            if (typeof portfolioData === 'undefined') {
-                console.error('Portfolio data not loaded. Make sure data/portfolio-data.js exists and is accessible.');
-                // Fallback to basic content
-                document.getElementById('hero-name').textContent = 'Advi Rao Kulkarni';
-                document.getElementById('hero-title').innerHTML = 'SAP Senior Consultant & Technical Architect<br>Data Analytics and Insights Specialist';
-                return;
+        // Portfolio Data (fallback if external file doesn't load)
+        const fallbackData = {
+            personal: {
+                name: "Advi Rao Kulkarni",
+                shortName: "Advi Kulkarni",
+                title: "SAP Senior Consultant & Technical Architect",
+                subtitle: "Data Analytics and Insights Specialist",
+                role: "Senior Data & Analytics Consultant",
+                phone: "(346) 395-8885",
+                email: "aadvirao@gmail.com",
+                location: "Houston, TX",
+                linkedin: "https://linkedin.com/in/advi-kulkarni",
+                github: "https://github.com/advi-kulkarni"
+            },
+            about: {
+                paragraphs: [
+                    "I am a Senior Data & Analytics Consultant with over 16 years of experience in SAP and Cloud technologies, specializing in delivering innovative solutions for Fortune 500 companies.",
+                    "I excel in end-to-end SAP implementations across functional areas like VMS (Vehicle Management Solutions), OTC (Order to Cash), PTM (Plan to Manufacture), PTP (Plan to Procure), R2R (Record to Report), and IBP (Integrated Business Planning).",
+                    "With a strong mix of technical expertise and functional knowledge, I translate complex business requirements into actionable data analytics solutions. I have successfully generated business opportunities ranging from $500K to $10M and led teams in onsite-offshore models."
+                ]
+            },
+            stats: [
+                { number: "16+", label: "Years Experience" },
+                { number: "$10M+", label: "Project Value Led" },
+                { number: "15+", label: "Team Members Managed" }
+            ],
+            skills: [
+                {
+                    title: "SAP Technologies",
+                    icon: "fas fa-database",
+                    tags: ["SAP S4/HANA", "BW4HANA", "SAP IBP", "SAP HANA", "SAP Datasphere", "SAP SAC", "SAP AFO", "SAP CPI"]
+                },
+                {
+                    title: "Programming & Development", 
+                    icon: "fas fa-code",
+                    tags: ["ABAP", "SQL", "Python", "CDS", "AMDP", "Shell Bash Script"]
+                },
+                {
+                    title: "Cloud & Analytics",
+                    icon: "fas fa-cloud", 
+                    tags: ["Snowflake", "Databricks", "AWS", "Tableau", "Power BI", "Denodo Platform"]
+                },
+                {
+                    title: "Business & Project Management",
+                    icon: "fas fa-cogs",
+                    tags: ["RFP Management", "Digital Transformation", "Team Leadership", "Resource Management", "Technical Training", "ERD Modeling"]
+                }
+            ],
+            experience: [
+                {
+                    title: "Technical Lead/Architect – Data & Analytics",
+                    company: "Infosys | Houston, TX",
+                    duration: "May 2023 - November 2024 | Automotive Industry",
+                    achievements: [
+                        "Spearheaded a $5 million digital transformation initiative modernizing analytical capabilities",
+                        "Designed comprehensive SAP VMS Analytics and Order to Cash solutions with 90+ KPIs",
+                        "Led cross-functional team of 7 resources for successful solution deployment",
+                        "Performed POC on SAP Datasphere, replicating SAP ME and BW4HANA systems",
+                        "Enabled significant cost savings through enhanced data-driven decision-making"
+                    ]
+                },
+                {
+                    title: "Technical Lead/Senior Consultant – Data & Analytics",
+                    company: "Infosys | Bengaluru, India", 
+                    duration: "May 2018 - Mar 2023 | Manufacturing Industry",
+                    achievements: [
+                        "Conceived and executed $450k RFP digital transformation project for SAP IBP",
+                        "Architected analytical solution improving manufacturing efficiency by 80%",
+                        "Created Python and Bash script applications for data validation automation",
+                        "Led team of 3 developers ensuring timely project delivery"
+                    ]
+                },
+                {
+                    title: "Team Lead – SAP BW Support",
+                    company: "Cognizant | Bengaluru, India",
+                    duration: "May 2014 - May 2018 | Semiconductor Industry",
+                    achievements: [
+                        "Led 12-member team providing 24/7 application maintenance and support",
+                        "Proactively minimized incident counts ensuring uninterrupted business processes",
+                        "Optimized system performance for critical semiconductor operations"
+                    ]
+                },
+                {
+                    title: "SAP BW/ABAP Developer",
+                    company: "IBM | Bengaluru, India",
+                    duration: "April 2011 - July 2014 | Consulting & Audit",
+                    achievements: [
+                        "Contributed to SAP BW development projects in COE team",
+                        "Designed and developed Finance Reports", 
+                        "Demonstrated expertise in SAP ABAP, BW, and testing methodologies"
+                    ]
+                }
+            ],
+            contact: {
+                description: "Ready to discuss your next SAP Data Analytics project? Let's connect!"
+            }
+        };
+
+        // Function to populate website with data
+        function populateWebsite(data) {
+            // Update page elements
+            if (data.personal) {
+                document.getElementById('page-title').textContent = `${data.personal.name} - ${data.personal.title}`;
+                document.getElementById('logo-name').textContent = data.personal.shortName;
+                document.getElementById('hero-name').textContent = data.personal.name;
+                document.getElementById('hero-title').innerHTML = `${data.personal.title}<br>${data.personal.subtitle}`;
+                document.getElementById('about-role').textContent = data.personal.role;
+                
+                // Update social links
+                if (data.personal.linkedin) {
+                    document.getElementById('linkedin-link').href = data.personal.linkedin;
+                } else {
+                    document.getElementById('linkedin-link').style.display = 'none';
+                }
+                
+                if (data.personal.github) {
+                    document.getElementById('github-link').href = data.personal.github;
+                } else {
+                    document.getElementById('github-link').style.display = 'none';
+                }
             }
 
-            // Update page title and basic info
-            document.getElementById('page-title').textContent = `${portfolioData.personal.name} - ${portfolioData.personal.title}`;
-            document.getElementById('logo-name').textContent = portfolioData.personal.shortName;
-            document.getElementById('hero-name').textContent = portfolioData.personal.name;
-            document.getElementById('hero-title').innerHTML = `${portfolioData.personal.title}<br>${portfolioData.personal.subtitle}`;
-            document.getElementById('about-role').textContent = portfolioData.personal.role;
-            
             // Populate about paragraphs
-            const aboutContainer = document.getElementById('about-paragraphs');
-            aboutContainer.innerHTML = portfolioData.about.paragraphs
-                .map(p => `<p>${p}</p>`)
-                .join('');
-            
+            if (data.about) {
+                const aboutContainer = document.getElementById('about-paragraphs');
+                aboutContainer.innerHTML = data.about.paragraphs
+                    .map(p => `<p>${p}</p>`)
+                    .join('');
+            }
+
             // Populate stats
-            const statsContainer = document.getElementById('stats-container');
-            statsContainer.innerHTML = portfolioData.stats
-                .map(stat => `
-                    <div class="stat">
-                        <h4>${stat.number}</h4>
-                        <p>${stat.label}</p>
-                    </div>
-                `).join('');
-            
+            if (data.stats) {
+                const statsContainer = document.getElementById('stats-container');
+                statsContainer.innerHTML = data.stats
+                    .map(stat => `
+                        <div class="stat">
+                            <h4>${stat.number}</h4>
+                            <p>${stat.label}</p>
+                        </div>
+                    `).join('');
+            }
+
             // Populate skills
-            const skillsContainer = document.getElementById('skills-container');
-            skillsContainer.innerHTML = portfolioData.skills
-                .map(skill => `
-                    <div class="skill-category">
-                        <h3><i class="${skill.icon}"></i> ${skill.title}</h3>
-                        <div class="skill-tags">
-                            ${skill.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
+            if (data.skills) {
+                const skillsContainer = document.getElementById('skills-container');
+                skillsContainer.innerHTML = data.skills
+                    .map(skill => `
+                        <div class="skill-category">
+                            <h3><i class="${skill.icon}"></i> ${skill.title}</h3>
+                            <div class="skill-tags">
+                                ${skill.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
+                            </div>
                         </div>
-                    </div>
-                `).join('');
-            
+                    `).join('');
+            }
+
             // Populate experience
-            const experienceContainer = document.getElementById('experience-container');
-            experienceContainer.innerHTML = portfolioData.experience
-                .map(exp => `
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="job-title">${exp.title}</div>
-                            <div class="company">${exp.company}</div>
-                            <div class="duration">${exp.duration}</div>
-                            <ul class="achievements">
-                                ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-                            </ul>
+            if (data.experience) {
+                const experienceContainer = document.getElementById('experience-container');
+                experienceContainer.innerHTML = data.experience
+                    .map(exp => `
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="job-title">${exp.title}</div>
+                                <div class="company">${exp.company}</div>
+                                <div class="duration">${exp.duration}</div>
+                                <ul class="achievements">
+                                    ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                `).join('');
-            
-            // Populate contact info
-            document.getElementById('contact-description').textContent = portfolioData.contact.description;
-            const contactContainer = document.getElementById('contact-container');
-            contactContainer.innerHTML = `
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>${portfolioData.personal.phone}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>${portfolioData.personal.email}</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>${portfolioData.personal.location}</span>
-                </div>
-            `;
-            
+                    `).join('');
+            }
+
+            // Update contact description
+            if (data.contact) {
+                document.getElementById('contact-description').textContent = data.contact.description;
+            }
+
             // Update footer
-            document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${portfolioData.personal.name}. All rights reserved.`;
+            if (data.personal) {
+                document.getElementById('footer-text').textContent = `© ${new Date().getFullYear()} ${data.personal.name}. All rights reserved.`;
+            }
         }
 
-        // Initialize the website
+        // Load external data file
+        function loadPortfolioData() {
+            const script = document.createElement('script');
+            script.src = 'data/portfolio-data.js';
+            script.onload = function() {
+                console.log('External data loaded successfully');
+                if (typeof portfolioData !== 'undefined') {
+                    populateWebsite(portfolioData);
+                } else {
+                    console.warn('portfolioData not found, using fallback');
+                    populateWebsite(fallbackData);
+                }
+            };
+            script.onerror = function() {
+                console.warn('External data file failed to load, using fallback');
+                populateWebsite(fallbackData);
+            };
+            document.head.appendChild(script);
+        }
+
+        // Initialize website
         document.addEventListener('DOMContentLoaded', function() {
-            // Small delay to ensure external script loads
-            setTimeout(populateWebsite, 100);
-            
+            loadPortfolioData();
+
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -653,7 +852,7 @@
                 });
             });
 
-            // Add scroll effect to header
+            // Header scroll effect
             window.addEventListener('scroll', function() {
                 const header = document.querySelector('header');
                 if (window.scrollY > 100) {
@@ -673,19 +872,4 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-
-            // Observe all sections for animation
-            document.querySelectorAll('.section').forEach(section => {
-                section.style.opacity = '0';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(section);
-            });
-        });
-    </script>
-</body>
-</html>
+                        entry.target.style
