@@ -16,7 +16,10 @@ const portfolioData = {
         role: "Senior Data & Analytics Consultant",
         phone: "(346) 395-8885",
         email: "advirao@gmail.com",
-        location: "Houston, TX"
+        location: "Houston, TX",
+        linkedin: "https://linkedin.com/in/advirao",
+        github: "https://github.com/advirao"
+    },
     },
     
     // ========================================== 
