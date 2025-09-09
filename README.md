@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing my expertise as a SAP Senior Consultant & Technical Architect specializing in Data Analytics and Insights.
 
 ## 🌟 Live Website
-**Visit:** [https://yourusername.github.io/portfolio-website](https://yourusername.github.io/portfolio-website)
+**Visit:** [https://advirao.github.io/advi-protfolio/](https://advirao.github.io/advi-protfolio/)
 
 ## 🎯 About This Portfolio
 This portfolio highlights my 16+ years of experience in SAP and Cloud technologies, showcasing projects ranging from $500K to $10M in digital transformation initiatives.
@@ -85,10 +85,10 @@ The website uses a modular design that's easy to customize:
 - **Animations**: Smooth CSS transitions
 
 ## 📞 Contact Information
-- **Email**: aadvirao@gmail.com
+- **Email**: advirao@gmail.com
 - **Phone**: (346) 395-8885
 - **Location**: Houston, TX
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: [www.linkedin.com/in/advirao]
 
 ## 📄 License
 This project is open source. Feel free to use it as inspiration for your own portfolio!
