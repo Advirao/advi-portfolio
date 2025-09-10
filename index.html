@@ -154,18 +154,77 @@
             text-align: center;
         }
 
-        .profile-pic {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 8rem;
-            color: white;
-            margin: 0 auto;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        /* PERFECT CIRCLE CSS FOR ADVI'S PHOTO */
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden; /* CRITICAL: This clips the image to circle */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border: 6px solid white;
+    position: relative;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scales image to fill circle */
+    object-position: center 30%; /* Perfect for your photo - focuses on face */
+    display: block;
+    transform: scale(1.1); /* Slightly larger to eliminate any gaps */
+}
+
+/* Alternative positioning options for your specific photo */
+.profile-pic img.face-center {
+    object-position: center 25%; /* Focus more on face */
+    transform: scale(1.05);
+}
+
+.profile-pic img.full-head {
+    object-position: center 35%; /* Show more of head/hair */
+    transform: scale(1.15);
+}
+
+/* Hide the fallback icon when image loads */
+.profile-pic:has(img) i {
+    display: none;
+}
+
+.profile-pic:has(img) {
+    background: none; /* Remove gradient background when image is present */
+}
+
+/* Fallback icon styling */
+.profile-pic i {
+    font-size: 8rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Hover effect (optional) */
+.profile-pic:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
         }
 
         .about-text h3 {
